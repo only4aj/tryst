@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - TRYST'24</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body class="cbg" style="background-image: url('images/fbg.jpg')">
+    <nav class="df navBar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="images/trystlogo.png">
+        <div id="menu" class="menu"><img src="/images/menu.png" onclick="menuOpen()" alt=""></div>
+        <ul id="navbar" class="navlist">
+            <div class="navbaritem" id="navbaritem">
+                <img src="/images/cut.png" id="cut" alt="" onclick="exitOut()">
+                <li id="li"><a class="navlinks" href="/">Home</a></li>
+                <li><a class="navlinks" id="navlinks" href="">Events</a></li>
+                <li><a class="navlinks" href="">Brochure</a></li>
+                <li><a class="navlinks" href="contact.html">Contact</a></li>
+                <li><a class="navlinks" href="">Registration</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="df top-heading">
+        <h1 class="heading">EVENTS</h1>
+        <img class="underfancy" src="images/fancyunderline.png" alt="">
+    </div>
+    <div class="cardstack df cards">
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+        <div class="eventcard">
+            <img src="images/fbg_final.png" alt="">
+            <div class="cardinfo">
+                <p class="genre">Fashion</p>
+                <h2 class="eventhead">EnVogue'24 - The Fashion Competition</h2>
+                <p class="venue">Main Stage</p>
+                <p class="time">2pm - 4pm</p>
+                <button class="eventregister"><a href="">Register</a></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/TRYSTKESHAV/"><img src="images/facebook.png" alt="" height="45px"
+                    width="45px"></a>
+            <a href="https://www.instagram.com/tryst_kmv/"><img src="images/instagram.png" alt="" height="45px"
+                    width="45px"></a>
+            <a href="https://www.youtube.com/channel/UC23C6Vghe1eROCsvEyM-4hQ"><img src="images/x.png" alt=""
+                    height="45px" width="45px"></a>
+        </div>
+        <h4 class="developed-by">Designed and Developed by <span class="ansh-juneja">Ansh Juneja</span></h4>
+        <div class="copyright">
+            <h3>
+                Copyright © 2024 KMVTRYST
+            </h3>
+            <p class="rights">All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+
+    window.addEventListener("resize", () => {
+        location.reload()
+    })
+    let width = window.screen.width
+    if (width < 725) {
+        let nav = document.getElementById("navbar")
+        nav.style.right = '-200px';
+        nav.style.display = 'none';
+    } else {
+        document.getElementById("cut").style.display = 'none';
+        document.getElementById("menu").style.display = 'none';
+    }
+
+    const exitOut = () => {
+        let nav = document.getElementById("navbar")
+        nav.style.right = '-200px';
+        nav.style.transition = '0.5s';
+        setTimeout(() => {
+            nav.style.display = 'none';
+            document.getElementById("menu").style.display = 'block';
+        }, 200);
+    }
+
+    const menuOpen = () => {
+        let menu = document.getElementById("menu")
+        menu.style.display = 'none'
+        let nav = document.getElementById("navbar")
+        nav.style.display = 'block';
+        nav.style.right = '0px';
+        nav.style.transition = '0.2s';
+    }
+</script>
+
+</html>
