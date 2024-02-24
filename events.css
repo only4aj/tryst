@@ -409,9 +409,34 @@ body {
   .cardstack{
     gap: 20px;
   }
+  .eventcard{
+    width: 250px;
+    height: 360px;
+  }
+  .eventregister {
+    width: 230px;
+    font-size: 17px;
+  }
+  .cardinfo{
+    gap: 3px;
+  }
 }
 @media (max-width:320px) {
-  .eventcard {
+  .cardstack{
+    gap: 20px;
+  }
+  .eventcard{
+    width: 250px;
+    height: 360px;
+  }
+  .eventregister {
+    width: 230px;
+    font-size: 17px;
+  }
+  .cardinfo{
+    gap: 3px;
+  }
+/*   .eventcard {
     width: 200px;
     height: 360px;
 }
@@ -421,5 +446,5 @@ body {
 }
 .cardinfo{
   font-size: 12px;
-}
+} */
 }
