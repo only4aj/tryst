@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Protest+Riot&family=Sixtyfour&display=swap');
 
-* {
+*{
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -8,51 +8,48 @@
   box-sizing: border-box;
   font-family: "Black Ops One";
 }
-
-body {
+body{
   font-family: montserrat;
 }
 
-.cbg {
+.cbg{
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-nav {
+nav{
   background: rgb(21, 21, 21);
   height: 80px;
   width: 100%;
 }
 
-/* .logo {
+.logo{
   margin-left: 20px;
   margin-top: -20px;
-} */
+}
 
-.navlinks {
+.navlinks{
   font-weight: 500;
-  font-family: "Black Ops One", sans-serif;
+  font-family: "Black Ops One",sans-serif;
   font-size: 20px;
 }
 
-.navlinks:hover {
+.navlinks:hover{
   animation: cubic-bezier(0.19, 1, 0.22, 1);
   color: rgb(255, 255, 188);
   transition-duration: 0.5s;
 }
 
-nav ul {
+nav ul{
   float: right;
   margin-right: 20px;
 }
-
-nav ul li {
+nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-
-nav ul li a {
+nav ul li a{
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -60,7 +57,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-.checkbtn {
+.checkbtn{
   font-size: 30px;
   color: white;
   float: right;
@@ -69,29 +66,23 @@ nav ul li a {
   cursor: pointer;
   display: none;
 }
-
-#check {
+#check{
   display: none;
 }
-
-
-/* @media (max-width: 952px) {
-  .logo {
+@media (max-width: 952px){
+  .logo{
     font-size: 30px;
     padding-left: 50px;
   }
-
-  nav ul li a {
+  nav ul li a{
     font-size: 16px;
   }
 }
-
-@media (max-width: 858px) {
-  .checkbtn {
+@media (max-width: 858px){
+  .checkbtn{
     display: block;
   }
-
-  ul {
+  ul{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -101,31 +92,29 @@ nav ul li a {
     text-align: center;
     transition: all .5s;
   }
-
-  nav ul li {
+  nav ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-
-  nav ul li a {
+  nav ul li a{
     font-size: 20px;
   }
-
-  #check:checked~ul {
+  
+  #check:checked ~ ul{
     left: 0;
   }
-} */
+}
 
-.eventcard {
-  background-color: whitesmoke;
-  width: 300px;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 5px solid rgb(255, 255, 170);
-  border-radius: 20px;
+.eventcard{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px solid rgb(255, 255, 170);
+    border-radius: 20px;
 }
 
 .eventcard:hover {
@@ -134,64 +123,68 @@ nav ul li a {
   cursor: pointer;
 }
 
-.eventcard img {
+.eventcard img{
   border-radius: 20px;
 }
 
-.cardinfo {
-  margin-left: 5px;
+.cardinfo{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+.genre{
+    color: crimson;
+    font-weight: bold;
+}
+
+.eventhead{
+    color: rgb(14, 14, 14);
+}
+
+.eventregister{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 280px;
+    font-size: 15px;
+}
+
+.eventregister a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.venue,.time{
+    color: grey;
+    font-weight: bold;
+}
+
+.cardstack{
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-
-.genre {
-  color: crimson;
-  font-weight: bold;
-}
-
-.eventhead {
-  color: rgb(14, 14, 14);
-}
-
-.eventregister {
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 280px;
-  font-size: 15px;
-}
-
-.eventregister a {
-  text-decoration: none;
-  color: crimson;
-}
-
-.venue,
-.time {
-  color: grey;
-  font-weight: bold;
-}
-
-.cardstack {
-  /* display: flex; */
   gap: 60px;
-  /* margin-left: 30px;
-  margin-top: 10px; */
+  margin-left: 30px;
+  margin-top: 10px;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
-.heading {
+.heading{
   color: rgb(255, 255, 170);
+  margin-left: 440px;
+  margin-top: 20px;
   font-size: 50px;
 }
 
-.underfancy {
+.underfancy{
   width: 400px;
-  height: 50px;
-  margin-top: -20px;
+  height: 150px;
+  margin-top: -70px;
+  margin-left: 340px;
 }
 
 footer {
@@ -220,7 +213,7 @@ footer {
   word-spacing: 2px;
 }
 
-.copyright h3 {
+.copyright h3{
   font-family: "Black Ops One";
 }
 
@@ -232,219 +225,14 @@ footer {
   font-family: "Black Ops One";
 }
 
-.developed-by {
+.developed-by{
   font-family: "Black Ops One";
 }
 
-.ansh-juneja {
+.ansh-juneja{
   color: rgb(254, 28, 73);
 }
 
-.flexfields {
+.flexfields{
   gap: 10px;
-}
-
-/* Extra Code*/
-
-.df {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.navBar {
-  justify-content: space-between;
-}
-
-.top-heading {
-  flex-direction: column;
-  width: 100vw;
-  height: 150px;
-}
-
-.logo {
-  width: 120px;
-  margin-top: 10px;
-}
-
-@media (max-width:1024px) {
-  .cardstack {
-    gap: 30px;
-  }
-
-}
-
-@media (max-width:800px) {
-  .heading {
-    font-size: 45px;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
-    display: flex;
-  }
-
-  .navBar {
-    height: 65px;
-  }
-
-  .navlinks {
-    font-size: 16px;
-  }
-
-  .cardstack {
-    gap: 30px;
-  }
-
-  .eventcard {
-    width: 225px;
-    height: 390px;
-  }
-
-  .eventregister {
-    width: 210px;
-    font-size: 14px;
-  }
-
-  .cardinfo {
-    font-size: 13px;
-  }
-
-  footer {
-    margin-top: 0px;
-    height: 200px;
-    gap: 10px;
-    font-size: 14px;
-  }
-
-  .socialmedia {
-    gap: 30px;
-  }
-
-}
-
-@media (max-width:430px) {
-  .heading {
-    font-size: 30px;
-  }
-
-  .top-heading {
-    height: 95px;
-  }
-
-  
-  .underfancy {
-    width: 230px;
-    height: 40px;
-    margin-top: -10px;
-  }
-  
-  .eventcard {
-    width: 170px;
-    height: 320px;
-  }
-  
-  .eventregister {
-    width: 150px;
-    font-size: 12px;
-  }
-  
-  .cardinfo {
-    font-size: 11px;
-  }
-  
-  footer {
-    height: 150px;
-    gap: 8px;
-    font-size: 12px;
-  }
-  
-  .socialmedia{
-    gap: 20px;
-  }
-  
-  .socialmedia img{
-    width: 40px;
-    height: 40px;
-  }
-  
-  .navlist{
-    background-color: rgb(21, 21, 21);
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    font-size: 13px;
-    margin: 0;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  #cut{
-    width: 40px;
-  }
-  .navbaritem img{
-    display: block;
-  }
-  nav ul li{
-    line-height: 40px;
-  }
-  .navlinks{
-    font-size: 19px;
-  }
-  .menu{
-    margin-right: 10px;
-  }
-}
-
-@media (max-width:380px) {
-  .cardstack{
-    gap: 20px;
-  }
-  .eventcard{
-    width: 250px;
-    height: 360px;
-  }
-  .eventregister {
-    width: 230px;
-    font-size: 17px;
-  }
-  .cardinfo{
-    gap: 3px;
-  }
-}
-@media (max-width:320px) {
-  .cardstack{
-    gap: 20px;
-  }
-  .eventcard{
-    width: 250px;
-    height: 360px;
-  }
-  .eventregister {
-    width: 230px;
-    font-size: 17px;
-  }
-  .cardinfo{
-    gap: 3px;
-  }
-/*   .eventcard {
-    width: 200px;
-    height: 360px;
-}
-.eventregister {
-  width: 180px;
-  font-size: 17px;
-}
-.cardinfo{
-  font-size: 12px;
-} */
 }
